@@ -7,7 +7,7 @@
   <body bgcolor="white">
 
   <?
-  $link = pg_Connect("host=postgresql dbname=sampledb user=userD4U password=MS3Of3Phenhbgj1K");
+  $link = pg_connect("host=postgresql dbname=sampledb user=userD4U password=MS3Of3Phenhbgj1K");
   $result = pg_exec($link, "select * from link");
   $numrows = pg_numrows($result);
   echo "<p>link = $link<br>
